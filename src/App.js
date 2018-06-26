@@ -71,7 +71,7 @@ class App extends Component {
         <header onClick={this.reFocus}>
           <button className="theme-settings" onClick={this.openModal}><FontAwesome icon={faCog} /></button>
           <h1>React.js Calculator</h1>
-          <a href="https://github.com/deanmontez" target="blank" className="github"><FontAwesome icon={faGithub} /></a>
+          <a href="https://github.com/deanmontez/react-calculator" target="blank" className="github"><FontAwesome icon={faGithub} /></a>
         </header>
   
         <Calculator />
