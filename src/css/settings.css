@@ -1,0 +1,87 @@
+.settings {
+  display: flex;
+  float: left;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  width: 320px;
+}
+
+.settings label {
+  display: flex;
+  align-items: center;
+  min-width: 33%;
+  font-size: 14px;
+  font-weight: 300;
+  position: relative;
+}
+
+.settings label span {
+  flex-grow: 2;
+  text-align: center;
+}
+
+.settings button {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  font-size: 12px;
+  font-weight: 700;
+  height: 48px;
+  width: 76px;
+  text-transform: uppercase;
+
+  /* Color */
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.settings button:hover {
+  /* Color */
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.settings .coming-soon {
+  padding: 0 1px 4px;
+  margin-bottom: -4px;
+  border-bottom: 2px dotted rgba(255, 255, 255, 0.3);
+  cursor: help;
+}
+
+.tool-tip {
+  padding-bottom: 4px;
+  margin-bottom: -4px;
+  border-bottom: 2px dotted #ddd;
+  cursor: help;
+}
+
+.tip {
+  position: absolute;
+  top: -55px;
+  left: 48px;
+  margin-left: -64px;
+  width: calc(140px + 40px);
+  padding: 12px 20px;
+  background-color: #fff8de;
+  border-radius: 4px;
+  z-index: 1;
+  color: #e8a81e;
+  font-weight: 400;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.show-tip {
+  opacity: 1;
+  transform: translateY(-15px);
+}
+
+.tip:after {
+  content: '';
+  position: absolute;
+  top: 43px;
+  left: calc(50% - 12px);
+  width: 0; 
+  height: 0; 
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #fff8de;
+}

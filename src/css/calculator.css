@@ -1,0 +1,183 @@
+.calculator {
+  float: left;
+  width: 320px;
+}
+
+output {
+  display: block;
+  white-space: nowrap;
+  overflow-x: hidden;
+  padding: 14px 16px;
+  line-height: 1;
+  margin-bottom: 12px;
+  width: 320px;
+  height: 48px;
+  transition: border-color 0.3s;
+
+  /* Color */
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.output-text {
+  display: block;
+  float: right;
+  position: relative;
+}
+
+sup {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 2px;
+}
+
+.warning {
+  /* Color */
+  border-color: #ff8d7b;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+main button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  float: left;
+  font-family: 'Europa', sans-serif;
+  font-size: 14px;
+  height: 48px;
+  line-height: 1;
+  outline: none;
+  padding: 0;
+  transition: background-color 0.2s, border-color 0.2s;
+
+  /* Color */
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+main button:hover {
+  /* Color */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.grouping {
+  /* Color */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.numbers {
+  float: left;
+  margin-top: 12px;
+  width: 232px;
+
+  /* Color */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.grouping button {
+  width: 115px;
+  height: 46px;
+}
+
+.numbers button { width: 76px; }
+
+.numbers button:nth-of-type(3n + 2) {
+  width: 78px;
+}
+
+.numbers button:nth-of-type(3n + 4) {
+  clear: left;
+}
+
+.equals {
+  font-size: 18px;
+
+  /* Color */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.clear {
+  font-weight: 700;
+  margin-left: 12px;
+  margin-bottom: 12px;
+  width: 76px;
+  float: right;
+
+  /* Color */
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.operators {
+  float: right;
+  width: 76px;
+
+  /* Color */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.operators button {
+  font-size: 18px;
+  width: 100%;
+
+  /* Color */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.operators button:hover,
+.clear:hover,
+.equals:hover {
+  /* Color */
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.trig,
+.exponential {
+  margin-top: 12px;
+  width: calc(50% - 6px);
+  float: left;
+
+  /* Color */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.trig button,
+.exponential button {
+  width: 50%;
+}
+
+.exponential {
+  float: right;
+}
+
+button sub, button sup {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+  margin-left: 2px;
+}
+
+main::before {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  content: '';
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

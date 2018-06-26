@@ -1,0 +1,147 @@
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.25);
+  transition: opacity 0.3s;
+}
+
+.modal {
+  background-color: #fff;
+  color: #aaa;
+  padding: 60px 72px;
+  outline: none;
+  transition: opacity 0.3s;
+  box-shadow: 0 12px 8px -8px rgba(0, 0, 0, 0.1);
+}
+
+.modal.open,
+.overlay.open {
+  opacity: 1;
+}
+
+.modal.closed,
+.overlay.closed {
+  opacity: 0;
+}
+
+.modal h3 {
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+.modal h3 svg {
+  margin-right: 16px;
+  color: #ccc;
+}
+
+.theme-colors {
+  margin-bottom: 24px
+}
+
+.theme-colors:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.theme-colors .color {
+  display: block;
+  float: left;
+  width: 48px;
+  height: 32px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 2px #ffffff;
+  transition: box-shadow 0.3s;
+  font-size: 16px;
+  color: #fff;
+}
+
+.theme-colors .color:hover,
+.theme-colors .color:focus {
+  z-index: 1;
+  box-shadow: 0 2px #30c933;
+}
+
+.theme-colors .color:first-of-type {
+  border-radius: 6px 0 0 6px;
+}
+
+.theme-colors .color:last-of-type {
+  border-radius: 0 6px 6px 0;
+}
+
+.theme-colors .theme-name {
+  font-weight: 300;
+  padding-bottom: 4px;
+  margin-left: 6px;
+  border-bottom: 2px solid #eee;
+}
+
+.particle-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 336px;
+}
+
+.particle-options h3 {
+  width: 100%;
+}
+
+.particle-options label {
+  display: flex;
+  font-size: 14px;
+  font-weight: 300;
+  position: relative;
+}
+
+.particle-options label span {
+  margin-left: 8px;
+}
+
+.particle-options label .tip {
+  margin-left: -57px;
+}
+
+.particle-options .react-toggle-thumb {
+  background-color: #eee;
+}
+
+.particle-options .react-toggle-track {
+  background-color: #ccc;
+}
+
+.particle-options .react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
+  background-color: #bbb;
+}
+
+.particle-options .react-toggle--checked .react-toggle-track {
+  background-color: #19AB27;
+}
+
+.particle-options .react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+  background-color: #30c933;
+}
+
+.close-modal {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}

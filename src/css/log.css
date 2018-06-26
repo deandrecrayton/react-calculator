@@ -1,0 +1,67 @@
+.log {
+  display: block;
+  float: left;
+  margin-left: 32px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 280px;
+}
+
+.log h2 {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 16px;
+
+  /* Color */
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.log svg {
+  margin-right: 12px;
+}
+
+.log ul {
+  border-top: none;
+  height: 456px;
+  width: 100%;
+  overflow: scroll;
+
+  /* Color */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.log .entry {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px 16px;
+  transition: background-color 0.2s;
+  font-size: 14px;
+  line-height: 1.5;
+
+  /* Color */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.log .entry:hover {
+  /* Color */
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.log .equation {
+  cursor: text;
+}
+
+.log .answer {
+  display: block;
+  float: right;
+  line-height: 1;
+  margin-left: 12px;
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 3px;
+
+  /* Color */
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+}
